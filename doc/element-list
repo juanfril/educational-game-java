@@ -1,0 +1,4 @@
+module:EducationalGame
+educational.controller
+educational.model
+educational.record

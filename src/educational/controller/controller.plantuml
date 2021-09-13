@@ -1,0 +1,189 @@
+@startuml
+
+title __CONTROLLER's Class Diagram__\n
+
+  namespace  {
+    namespace ducational.controller {
+      class educational.controller.CatchTheMouseController {
+          ~ stage : Stage
+          - cvMouse : Canvas
+          + initialize()
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ducational.controller {
+      class educational.controller.GeneralController {
+          # dialog : Alert
+          + clic()
+          + initialize()
+          + setNumbers()
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ducational.controller {
+      class educational.controller.HowManyAreThereController {
+          ~ stage : Stage
+          - btnAnswer : Button
+          - circle1 : Circle
+          - circle10 : Circle
+          - circle2 : Circle
+          - circle3 : Circle
+          - circle4 : Circle
+          - circle5 : Circle
+          - circle6 : Circle
+          - circle7 : Circle
+          - circle8 : Circle
+          - circle9 : Circle
+          - circles : ArrayList<Circle>
+          - count : byte
+          - howMany : int
+          - lbPlayer : Label
+          - lbText : Label
+          - random : Random
+          - records : ArrayList<Record>
+          - result : int
+          - tbResult : TextField
+          + initialize()
+          - hideCircles()
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ducational.controller {
+      class educational.controller.MainMenuController {
+          {static} + player : Player
+          - age : byte
+          - btnGo : Button
+          - btnRanking : Button
+          - txtAge : TextField
+          - txtName : TextField
+          + initialize()
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ducational.controller {
+      class educational.controller.OlderController {
+          - btnSubtract : Button
+          - btnSubtractWithCarriedController : Button
+          - btnSums : Button
+          - root : Parent
+          - stage : Stage
+          + initialize()
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ducational.controller {
+      class educational.controller.ScoreController {
+          ~ observableList : ObservableList<Record>
+          ~ stage : Stage
+          - btnBack : Button
+          - lvRanking : ListView
+          - records : ArrayList<Record>
+          + initialize()
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ducational.controller {
+      class educational.controller.SubtractWithCarriedController {
+          + initialize()
+          + setNumbers()
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ducational.controller {
+      class educational.controller.SubtractsController {
+          # btnResult : Button
+          # count : byte
+          # lbNumber1 : Label
+          # lbNumber2 : Label
+          # lbPlayer : Label
+          # number1 : int
+          # number2 : int
+          # random : Random
+          # records : ArrayList<Record>
+          # result : int
+          # stage : Stage
+          # txtResult : TextField
+          + initialize()
+          + setNumber1()
+          + setNumber2()
+          + setNumbers()
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ducational.controller {
+      class educational.controller.SumsController {
+          ~ stage : Stage
+          - btnResult : Button
+          - count : byte
+          - lbNumber1 : Label
+          - lbNumber2 : Label
+          - lbPlayer : Label
+          - number1 : int
+          - number2 : int
+          - random : Random
+          - records : ArrayList<Record>
+          - result : int
+          - txtResult : TextField
+          + initialize()
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ducational.controller {
+      class educational.controller.UnderController {
+          - btnCatchTheMouse : Button
+          - btnHowMany : Button
+          - root : Parent
+          - stage : Stage
+          + initialize()
+      }
+    }
+  }
+  
+
+  educational.controller.CatchTheMouseController -up-|> educational.controller.GeneralController
+  educational.controller.GeneralController .up.|> javafx.fxml.Initializable
+  educational.controller.HowManyAreThereController -up-|> educational.controller.GeneralController
+  educational.controller.MainMenuController -up-|> educational.controller.GeneralController
+  educational.controller.OlderController -up-|> educational.controller.GeneralController
+  educational.controller.ScoreController -up-|> educational.controller.GeneralController
+  educational.controller.SubtractWithCarriedController -up-|> educational.controller.SubtractsController
+  educational.controller.SubtractsController -up-|> educational.controller.GeneralController
+  educational.controller.SumsController -up-|> educational.controller.GeneralController
+  educational.controller.UnderController -up-|> educational.controller.GeneralController
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

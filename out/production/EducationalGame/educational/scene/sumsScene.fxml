@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="educational.controller.SumsController">
+    <children>
+        <Label layoutX="278.0" layoutY="35.0" text="Sums" />
+        <Label fx:id="lbNumber1" layoutX="279.0" layoutY="102.0" text="Number1" />
+        <Label fx:id="lbNumber2" layoutX="278.0" layoutY="146.0" text="Number2" />
+        <TextField fx:id="txtResult" layoutX="262.0" layoutY="206.0" prefHeight="25.0" prefWidth="78.0" />
+        <Button fx:id="btnResult" layoutX="275.0" layoutY="287.0" mnemonicParsing="false" onAction="#clic" text="Result" />
+        <Label layoutX="214.0" layoutY="146.0" text="+" />
+      <Label fx:id="lbPlayer" layoutX="14.0" layoutY="14.0" text="Label" />
+    </children>
+
+</AnchorPane>

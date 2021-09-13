@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="educational.controller.ScoreController">
+   <children>
+      <ListView fx:id="lvRanking" layoutX="72.0" layoutY="54.0" prefHeight="336.0" prefWidth="447.0" />
+      <Label layoutX="220.0" layoutY="24.0" text="Best records all the games" />
+      <Button fx:id="btnBack" layoutX="534.0" layoutY="12.0" mnemonicParsing="false" text="Back" />
+   </children>
+</AnchorPane>

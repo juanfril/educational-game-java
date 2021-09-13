@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="educational.controller.HowManyAreThereController">
+   <children>
+      <Label layoutX="244.0" layoutY="6.0" text="Minigame How many" />
+      <TextField fx:id="tbResult" layoutX="226.0" layoutY="294.0" />
+      <Label fx:id="lbText" layoutX="234.0" layoutY="262.0" text="How many are at image?" />
+      <Button fx:id="btnAnswer" layoutX="259.0" layoutY="339.0" mnemonicParsing="false" text="Send anwser" />
+      <Circle fx:id="circle1" fill="DODGERBLUE" layoutX="98.0" layoutY="111.0" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circle4" fill="DODGERBLUE" layoutX="375.0" layoutY="111.0" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circle3" fill="DODGERBLUE" layoutX="288.0" layoutY="111.0" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circle2" fill="DODGERBLUE" layoutX="197.0" layoutY="111.0" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circle5" fill="DODGERBLUE" layoutX="471.0" layoutY="111.0" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circle10" fill="DODGERBLUE" layoutX="98.0" layoutY="188.0" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circle7" fill="DODGERBLUE" layoutX="375.0" layoutY="188.0" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circle8" fill="DODGERBLUE" layoutX="288.0" layoutY="188.0" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circle9" fill="DODGERBLUE" layoutX="197.0" layoutY="188.0" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circle6" fill="DODGERBLUE" layoutX="471.0" layoutY="188.0" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label fx:id="lbPlayer" layoutX="14.0" layoutY="15.0" text="Label" />
+   </children>
+</AnchorPane>

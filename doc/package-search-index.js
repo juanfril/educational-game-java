@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"m":"EducationalGame","l":"educational.controller"},{"m":"EducationalGame","l":"educational.model"},{"m":"EducationalGame","l":"educational.record"}]
